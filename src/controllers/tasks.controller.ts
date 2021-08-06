@@ -6,7 +6,7 @@ export class TasksController {
   constructor(private service: TasksService) {}
 
   @Get()
-  getAllTasks = () => {
+  getAllTasks() {
     return this.service.getAllTasks();
-  };
+  }
 }
